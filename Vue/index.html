@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- El defer se encarga de cargar el script al final del documento. -->
+    <script src="app.js" defer></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Vue: Primer Intento</h1>
+    </header>
+
+    <section id="task">
+        <h2>Lista de tareas</h2>
+        <!-- Para conectar el Vue con el HTML se usa la sintaxis {{ }} -->
+        <p> {{ tasksA }} </p>
+        <p> {{ tasksB }} </p>
+    </section>
+</body>
+</html>

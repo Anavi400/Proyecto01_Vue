@@ -9,10 +9,24 @@ const app = Vue.createApp({
             // tasksA es una variable que se encarga de almacenar la informacion de la app.
             tasksA: "Terminar el informe de Acreditables",
             tasksB: "Terminar el informe de Redes de Computadoras",
+            vueLink: "https://vuejs.org/",
+        }
+    },
+
+    methods: {
+        // changeTask es un metodo que se encarga de cambiar la informacion de la app.
+        changeTask() {
+            const randomNumber = Math.random();
+            if (randomNumber < 0.5) {
+                return this.tasksA;
+            } else {
+                return this.tasksB;
+            }
         }
     }
 }); 
 
+// this se utiliza para acceder a propiedades o atributos de la app.
 // 2 - Montar la app.
 // app.mount('#app'); se encarga de montar la app.
 // #task es el id del elemento que se va a montar.
